@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicio</title>
+        <meta name="description" content="Inicio de la pagina">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/home.css?rnd=132"><!--Si o si los css los tengo que colocar en una carpeta llamada static-->
+    </head>
+    <body>
+        <header class="header">
+            <div id="menu">
+                <ul id="listaMenu">
+                    <li class="lista home"><a href="{{ url_for('inicio') }}">Home</a></li>
+                    <li class="lista converted"><a href="converted">Conversor</a></li>
+                </ul>
+            </div>
+        </header>
+        <br>
+        {% block content %}
+        {% endblock %}
+        <footer class="footer">
+            <div><small><b><u>Contacto</u></b></small></div>
+            <div><small><u>Telefono: </u><em>999999999</em></small></div>
+            <div><a href="mailto:novasr4516@gmail.com"><small><u>Correo: </u></em>Correo<em></small></a></div>
+            <div><small>Derechos reservados &copy;</small></div>
+        </footer>
+
+    </body>
+</html>

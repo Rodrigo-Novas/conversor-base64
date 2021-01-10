@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicio</title>
+        <meta name="description" content="Inicio de la pagina">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        {% extends 'layout.html' %}
+        {% block content %}
+
+            <main class="main">
+                <form action="/convertedbase" method="POST">
+                    <label for="texto">Ingrese su texto a convertir: </label>
+                    <input type="text" name="texto" id="texto">
+                    <input type="submit" value="Convertir">
+                </form>
+            </main>
+            <br>
+            <main class="main">
+                <form action="/convertedtext" method="POST">
+                    <label for="base">Ingrese su base 64 a convertir: </label>
+                    <input type="text" name="base" id="base">
+                    <input type="submit" value="Convertir">
+                </form>
+            </main>
+        {% endblock %}
+    </body>
+</html>
