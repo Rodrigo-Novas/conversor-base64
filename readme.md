@@ -4,6 +4,6 @@
 <h4>Framework y librerias utilizadas</h4>
 <ul>
     <li>Flask</li>
-    <li>Werkzeug/li>
-    <li>Jinja2/li>
+    <li>Werkzeug</li>
+    <li>Jinja2</li>
 <ul>
